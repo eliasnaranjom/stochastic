@@ -1,29 +1,29 @@
 from graphviz import Digraph
 
 # Lista de actividades - Punto 1
-# actividades = [
-#     {'name':'A', 'time': 0, 'pre': [], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'B', 'time': 8, 'pre': ['A'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'C', 'time': 0.1, 'pre': ['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'D', 'time': 1, 'pre': ['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'E', 'time': 1, 'pre': ['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'F', 'time': 1, 'pre': ['D'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'G', 'time': 2, 'pre': ['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'H', 'time': 3, 'pre': ['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'I', 'time': 1, 'pre': ['G', 'E'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'J', 'time': 4, 'pre': ['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'K', 'time': 2, 'pre': ['J'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'L', 'time': 1, 'pre': ['F', 'H', 'K'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'M', 'time': 0.5, 'pre': ['L'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'N', 'time': 2, 'pre': ['I'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'O', 'time': 1, 'pre': ['N'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'P', 'time': 1.5, 'pre': ['N'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'Q', 'time': 5, 'pre': ['C'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'R', 'time': 1, 'pre': ['M', 'O', 'P', 'Q'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'S', 'time': 0.5, 'pre': ['R'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'T', 'time': 1, 'pre': ['S'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-#     {'name':'U', 'time': 0, 'pre': ['T'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-# ]
+actividades = [
+    {'name':'A', 'time': 0, 'pre': [], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'B', 'time': 8, 'pre': ['A'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'C', 'time': 0.1, 'pre': ['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'D', 'time': 1, 'pre': ['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'E', 'time': 1, 'pre': ['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'F', 'time': 1, 'pre': ['D'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'G', 'time': 2, 'pre': ['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'H', 'time': 3, 'pre': ['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'I', 'time': 1, 'pre': ['G', 'E'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'J', 'time': 4, 'pre': ['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'K', 'time': 2, 'pre': ['J'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'L', 'time': 1, 'pre': ['F', 'H', 'K'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'M', 'time': 0.5, 'pre': ['L'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'N', 'time': 2, 'pre': ['I'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'O', 'time': 1, 'pre': ['N'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'P', 'time': 1.5, 'pre': ['N'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'Q', 'time': 5, 'pre': ['C'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'R', 'time': 1, 'pre': ['M', 'O', 'P', 'Q'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'S', 'time': 0.5, 'pre': ['R'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'T', 'time': 1, 'pre': ['S'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+    {'name':'U', 'time': 0, 'pre': ['T'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+]
 
 # Lista de actividades - Punto 2
 # actividades = [
@@ -38,17 +38,17 @@ from graphviz import Digraph
 # ]
 
 # Lista de actividades - Punto 3
-actividades = [
-    {'name':'A', 'time':5, 'pre':[], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-    {'name':'B', 'time':2, 'pre':['A'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-    {'name':'C', 'time':4, 'pre':['A'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-    {'name':'D', 'time':5, 'pre':['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-    {'name':'E', 'time':5, 'pre':['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-    {'name':'F', 'time':5, 'pre':['C'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-    {'name':'G', 'time':2, 'pre':['E', 'F'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-    {'name':'H', 'time':3, 'pre':['D'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-    {'name':'I', 'time':5, 'pre':['G', 'H'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
-]
+# actividades = [
+#     {'name':'A', 'time':5, 'pre':[], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+#     {'name':'B', 'time':2, 'pre':['A'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+#     {'name':'C', 'time':4, 'pre':['A'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+#     {'name':'D', 'time':5, 'pre':['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+#     {'name':'E', 'time':5, 'pre':['B'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+#     {'name':'F', 'time':5, 'pre':['C'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+#     {'name':'G', 'time':2, 'pre':['E', 'F'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+#     {'name':'H', 'time':3, 'pre':['D'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+#     {'name':'I', 'time':5, 'pre':['G', 'H'], 'ip': 0, 'tp': 0, 'it': 0, 'tt': 0, 'h': 0},
+# ]
 
 # Crear el grafo
 g = Digraph('pert2')
@@ -112,9 +112,9 @@ for actividad in actividades:
         criticalRouter.append(actividad['name'])
 
 # Agregar nodo final con texto
-g.node('Z', label=f'\n\nRuta critica: {criticalRouter}')
+g.node('Z', label=f'\n\nRuta critica: {criticalRouter}\nDuracion del proyecto: {ultimo["tp"]}')
 
 # Renderizar y mostrar en una ventana emergente
-g.render('export/punto3', view=True, format='pdf')
+g.render('export/punto1', view=True, format='pdf')
 
 print("¡Diagrama y ruta critica generada con exito!")

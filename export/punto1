@@ -174,5 +174,6 @@ Terminación lejana=0.0
 Holgura=0.0"]
 	Z [label="
 
-Ruta critica: ['A', 'B', 'J', 'K', 'L', 'M', 'R', 'S', 'T', 'U']"]
+Ruta critica: ['A', 'B', 'J', 'K', 'L', 'M', 'R', 'S', 'T', 'U']
+Duracion del proyecto: 18.0"]
 }

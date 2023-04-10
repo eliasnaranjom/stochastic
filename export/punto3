@@ -74,5 +74,6 @@ Terminación lejana=5
 Holgura=0"]
 	Z [label="
 
-Ruta critica: ['A', 'C', 'F', 'G', 'I']"]
+Ruta critica: ['A', 'C', 'F', 'G', 'I']
+Duracion del proyecto: 21"]
 }

@@ -1,0 +1,78 @@
+digraph pert2 {
+	A -> B
+	A -> C
+	B -> D
+	B -> E
+	C -> F
+	E -> G
+	F -> G
+	D -> H
+	G -> I
+	H -> I
+	I [label="I
+Duración=5
+Inicio pronto=16
+Terminación pronta=21
+Inicio lejano=16
+Terminación lejana=21
+Horgura=0"]
+	H [label="H
+Duración=3
+Inicio pronto=12
+Terminación pronta=15
+Inicio lejano=13
+Terminación lejana=16
+Horgura=1"]
+	G [label="G
+Duración=2
+Inicio pronto=14
+Terminación pronta=16
+Inicio lejano=14
+Terminación lejana=16
+Horgura=0"]
+	F [label="F
+Duración=5
+Inicio pronto=9
+Terminación pronta=14
+Inicio lejano=9
+Terminación lejana=14
+Horgura=0"]
+	E [label="E
+Duración=5
+Inicio pronto=7
+Terminación pronta=12
+Inicio lejano=9
+Terminación lejana=14
+Horgura=2"]
+	D [label="D
+Duración=5
+Inicio pronto=7
+Terminación pronta=12
+Inicio lejano=8
+Terminación lejana=13
+Horgura=1"]
+	C [label="C
+Duración=4
+Inicio pronto=5
+Terminación pronta=9
+Inicio lejano=5
+Terminación lejana=9
+Horgura=0"]
+	B [label="B
+Duración=2
+Inicio pronto=5
+Terminación pronta=7
+Inicio lejano=7
+Terminación lejana=9
+Horgura=2"]
+	A [label="A
+Duración=5
+Inicio pronto=0
+Terminación pronta=5
+Inicio lejano=0
+Terminación lejana=5
+Horgura=0"]
+	Z [label="
+
+Ruta critica: ['A', 'C', 'F', 'G', 'I']"]
+}
